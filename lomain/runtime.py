@@ -9,5 +9,4 @@ def check_vpn(vpn_server_address=None):
         the IP address of the VPN server
     """
     public_ip_address = subprocess.check_output(["curl", "ifconfig.co"]).decode("utf-8").strip()
-
     return public_ip_address == vpn_server_address

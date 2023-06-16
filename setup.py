@@ -1,7 +1,7 @@
 from setuptools import setup
 
 
-DESCRIPTION = "generic, well-worn utilities"
+DESCRIPTION = "a library of standard, oft-needed utilities"
 
 try:
     LONG_DESCRIPTION = open('README.rst').read()

@@ -9,12 +9,13 @@ def get_module(level=0):
     Parameters
     ----------
     level : int
-        The 
+        The number of levels above the module of the calling function to return.
+        See notes section for detailed explanation.
 
     Notes
     -----
-    If level is 0, the module of the file where the calling function lives is returned.
-    If level is 1, 
+    If level is 0, the module of the file where the calling function resides is returned.
+    If level is 1, the module ONE ABOVE the file where the calling function resides is returned.
     """
     namespace = sys._getframe(1).f_globals
     caller_abs_path = os.path.abspath(namespace['__file__'])
