@@ -2,7 +2,7 @@
 
 `lomain` (read "lo mein"): a library of standard, oft-needed utilities by the LOgistics MAnagement INstitute.
 
-![logo](./assets/lomein_astronaut.png)
+<img src="./assets/lomein_astronaut.png" alt="drawing" width="250"/>
 
 ## Table of Contents
 * [Table of Contents](#table-of-contents)
