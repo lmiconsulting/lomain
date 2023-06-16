@@ -16,6 +16,14 @@ def get_module(level=0):
     -----
     If level is 0, the module of the file where the calling function resides is returned.
     If level is 1, the module ONE ABOVE the file where the calling function resides is returned.
+
+    Examples
+    --------
+    Add the parent module to the path:
+
+        import lomain
+        PARENT_MODULE_PATH = lomain.get_module(1)
+        sys.path.append(PARENT_MODULE_PATH)
     """
     namespace = sys._getframe(1).f_globals
     caller_abs_path = os.path.abspath(namespace['__file__'])
