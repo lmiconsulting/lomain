@@ -6,7 +6,12 @@
 
 ## Table of Contents
 * [Table of Contents](#table-of-contents)
+* [Usage](#usage)
 * [Contact](#contact)
+
+## Usage
+
+Users can, of course, `git clone` from GitHub, but expected usage is to include `lomain @ git+https://github.com/lmiconsulting/lomain.git` in your project's `requirements.txt` file.
 
 ## Contact
 

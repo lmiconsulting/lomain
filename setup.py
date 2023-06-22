@@ -8,6 +8,8 @@ try:
 except:
     LONG_DESCRIPTION = DESCRIPTION
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
 
 setup(
     name="lomain",
@@ -25,4 +27,5 @@ setup(
         "Programming Language :: Python :: 3",
     ),
     zip_safe=True,
+    install_requires=required,
 )

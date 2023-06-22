@@ -1,0 +1,2 @@
+attrdict @ git+https://github.com/lucasmccabe/AttrDict.git
+pyyaml==6.0
