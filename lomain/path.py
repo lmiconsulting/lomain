@@ -29,6 +29,12 @@ def get_module(level=0):
     caller_abs_path = os.path.abspath(namespace['__file__'])
 
     # get the index of the [level]th-to-last backslash character
-    idx = strings.get_nth_to_last_instance(s=caller_abs_path, char="\\", n=level)
+    if "\\" in caller_abs_path:
+        slash = "\\"
+    elif "//" in caller_abs_path:
+        slash = "//"
+    else:
+        slash = "/"
+    idx = strings.get_nth_to_last_instance(s=caller_abs_path, char=slash, n=level)
     
     return caller_abs_path[:idx]
