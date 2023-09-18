@@ -49,7 +49,7 @@ def is_from_package(obj, package_name):
     """
     # inspect the object's class and find its parent module
     module_name = obj.__class__.__module__
-    split_module_name = module_name.rsplit('.', 1) if '.' in module_name else [module_name]
+    split_module_name = module_name.split('.') if '.' in module_name else [module_name]
     if package_name not in split_module_name:
         return False
     return True
