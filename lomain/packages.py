@@ -28,9 +28,19 @@ def is_from_package(obj, package_name):
 
     Examples
     --------
+    >>> import numpy as np
     >>> a = np.array([1, 2, 3])
     >>> is_from_package(a, "numpy")
     True
+
+    >>> from unittest.mock import Mock
+    >>> mock_obj = Mock(spec=['attribute', 'method'])
+    >>> is_from_package(mock_obj, "mock")
+    True
+    >>> is_from_package(mock_obj, "unittest")
+    True
+    >>> is_from_package(mock_obj, "numpy")
+    False
 
     Notes
     -----
